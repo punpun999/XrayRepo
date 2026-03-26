@@ -10,7 +10,7 @@ DEST_DIR = r"D:\archive\Project_Dataset\Train_Data"
 TARGET_PARTS = ["XR_HAND", "XR_WRIST", "XR_SHOULDER"]
 
 # How many images per category we want to extract
-SAMPLES_PER_CLASS = 500 
+SAMPLES_PER_CLASS = 1000 
 
 def organize_and_sample_data():
     os.makedirs(DEST_DIR, exist_ok=True)
