@@ -1,0 +1,69 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------------------
+# Model weights -- far too large for git, and regenerable by training
+# ---------------------------------------------------------------------------
+*.pth
+*.pt
+*.ckpt
+*.npz
+
+# ---------------------------------------------------------------------------
+# Run outputs
+# ---------------------------------------------------------------------------
+eval_results/
+eval_results_*/
+gradcam_out/
+cam_*/
+runs/
+*.log
+*_history.json
+metrics.json
+predictions.csv
+
+# Keep the figures that the README embeds
+!assets/
+!assets/**
+
+# ---------------------------------------------------------------------------
+# Scratch / editor / OS
+# ---------------------------------------------------------------------------
+*.bak
+apply_fixes.py
+fix_captions.py
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+._*
+
+# ---------------------------------------------------------------------------
+# Dataset -- MURA requires registration with Stanford; never commit it
+# ---------------------------------------------------------------------------
+MURA-v1.1/
+archive/
+Train_Data/
+Test_set/
+Full_Test_Set/
+Learning_set/

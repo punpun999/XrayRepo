@@ -1,0 +1,22 @@
+# Core
+torch>=2.0
+torchvision>=0.15
+numpy>=1.23
+pillow>=9.0
+scikit-learn>=1.1
+
+# evaluate.py plots (optional -- plots are skipped cleanly if absent)
+matplotlib>=3.5
+
+# DL-File.py progress bars
+tqdm>=4.64
+
+# gradcam.py heatmap colouring -- optional, falls back to matplotlib.
+# (visualize_fracture.py, the superseded original, requires it.)
+opencv-python>=4.6
+
+# test_project.py
+pytest>=7.0
+
+# Intel Arc GPU users only, for the 'xpu' device path in Train_Full_Dataset.py:
+# intel-extension-for-pytorch

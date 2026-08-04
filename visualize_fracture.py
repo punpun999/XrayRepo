@@ -105,7 +105,7 @@ def main():
     # 5. Generate the Heatmap
     heatmap, pred_class = cam.generate(input_tensor)
     prediction_text = CLASS_NAMES[pred_class]
-    print(f"AI Diagnosis: {prediction_text}")
+    print(f"Model Diagnosis: {prediction_text}")
 
     # 6. Visualizing the Results
     # Resize heatmap to match the original image
